@@ -1,0 +1,236 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: beige;
+}
+label{
+    color: white;
+}
+header{
+    background-color: black;
+    box-sizing: border-box;
+}
+.lines{
+    background-color: orangered;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+}
+.line{
+    margin: 2px;
+    height: 3px;
+    width: 20px;
+}
+
+.img{
+    width: 400px;
+    height: 400px;
+    object-fit: fill;
+}
+img{
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+p{
+    font-weight: bold;
+    word-spacing: 4px;
+    letter-spacing: 2px;
+    margin: 20px;
+}
+.menu-bar{
+    background-color: black;
+    padding: 15px;
+    opacity: 0.9;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    
+}
+.menu-bar ul{
+    margin-right: 100px;
+    float: right;
+    background-color: black;
+
+}
+
+.menu-bar .fa-home, .fa-book,.fa-graduation-cap,.fa-volume-control-phone, .fa-flash{
+    background-color: black;
+    margin-right: 2px;
+}
+.menu-bar ul li{
+    display: inline-block;
+    margin-left: 40px;
+}
+.menu-bar ul li a{
+    position: relative;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    border-bottom: 2px solid white;
+    background-color: black;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+label{
+    background-color: black;
+}
+.menu-bar ul li a:hover{
+    border-bottom: 2px solid orangered;
+    cursor: pointer;
+    color: orangered;
+    transition: .5s;
+    transform: scale(1.1);
+    letter-spacing: 2px;
+}
+.container{
+    background-color: blanchedalmond;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+footer {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+}
+.signup{
+    height: 100px;
+    margin: 20px;
+    width: 40%;
+    text-align: center;
+    background-color: orangered;
+}
+
+.left{
+    background-color: black;
+    color: white;
+    display: flex;
+    
+    justify-content: start;
+    align-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    border: thin;
+    box-shadow: 5px 5px 5px black;
+    margin: 20px;
+    width: 400px;
+}
+.icon{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    justify-content: center;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid black;
+    margin: 20px;
+}
+.inner{
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+input{
+    border-radius: 5px ;
+    width: 60%;
+    height: 20px;
+    border-top: none;
+    margin: 20px;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+.inner2{
+    width: 89px;
+    height: 50%;
+    border-top: 2px solid black;
+    border-radius: 50%;
+}
+textarea{
+    margin: 20px;
+    margin-top: 0px;
+    height: 150px;
+    width: 60%;
+    border-radius: 5px;
+}
+button{
+    width: 50%;
+    height: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    border-radius: 10px ;
+    
+    border: thin;
+    background-color: orangered;
+    font-weight: bold;
+    
+    font-family: cursive;
+    font-style: normal;
+    box-shadow: 5px 5px 5px black;
+}
+button:hover{
+    transform: scale(1.1);
+    background-color: green;
+    transition: .5s;
+    cursor: pointer;    
+
+}
+@media  (max-width: 872px){
+    header .menu-bar ul{
+        display: none;
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+        width: 100%;
+        top: 0;
+        margin-top: 40px;
+        background-color: black;
+        opacity: 0.7;
+        
+     
+    }
+    header .menu-bar ul.active{
+        display: block;
+        transition: .5s;
+    }
+    .lines{
+        position: absolute;
+       display: block;
+        right: 60px;
+        top: 26px;
+    }
+    .lines:hover{
+        cursor: pointer;
+    }
+    header .menu-bar ul li{
+        
+        display: block;
+        background-color: black;
+        align-items: center;
+        text-align: center;
+    }
+    header .menu-bar ul li a{
+        display: block;
+        border-bottom: none;
+    }
+
+}
+
